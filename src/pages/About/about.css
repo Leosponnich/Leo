@@ -1,0 +1,55 @@
+.main{
+    background-color: #fffbf2;
+}
+
+.spacer{
+    width: 100vw;
+    height: 20vh;
+}
+
+.aboutMainContent{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100vw;
+    height: 75vh;
+}
+
+.aboutLeftContent {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange the elements vertically */
+    width: 40vw;
+    
+}
+
+.brownBox{
+    background-color:#4D321F ;
+}
+
+.smallTextBox{
+    width: 40vw;
+}
+
+.picture{
+    position: relative;
+    width: 20vw;
+    height:fit-content;
+}
+
+.bigText{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.aboutMainText{
+    color: #36454F;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.brownBoxText{
+    padding-left: 2vw;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+}

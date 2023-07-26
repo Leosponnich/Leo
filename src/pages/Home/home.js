@@ -1,32 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-
-const HomeContainer = styled.div`
-  padding: 1rem;
-`;
-
-const HomeTitle = styled.h1`
-  font-size: 2rem;
-  margin-bottom: 1rem;
-`;
-
-const HomeContent = styled.p`
-  font-size: 1.2rem;
-`;
+import React from "react";
+import './home.css';
+import leoImage from '../../elements/leobackground.png';
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <HomeTitle>Welcome to My Website</HomeTitle>
-      <HomeContent>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-        posuere odio. Vivamus tempus justo ex, eget euismod ligula vestibulum
-        eget. Sed nec turpis sed massa vestibulum gravida at eu ipsum. Duis
-        eleifend varius lorem. Nullam finibus vestibulum eros, quis viverra est
-        aliquet sit amet. Suspendisse suscipit, libero a vestibulum fringilla,
-        dui orci hendrerit mauris, et aliquam neque ipsum non erat.
-      </HomeContent>
-    </HomeContainer>
+    <div className="main">
+        <div className="spacer"></div>
+        <div className="mainContent">
+            <div className="leftContent">
+            <h1 className="title">Leo</h1>
+            <div className="smallText">
+            <p className="mainText">I am Leo. A design student at the University of Oslo.</p>
+            </div>
+            <a href="/work"><p className="link">View my work</p></a>
+            </div>   
+            <img className="homePicture" alt="Picture of me" src={leoImage} />
+        </div>
+    </div>
   );
 };
 

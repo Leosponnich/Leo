@@ -5,8 +5,7 @@ import linkedin from '../../elements/linkedin.svg'
 import instagram from '../../elements/instagram.png'
 
 const HeaderContainer = styled.header`
-  background-color: #FFFBF2;
-  color: #fff;
+  color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +43,7 @@ const NavLink = styled(Link)`
   font-weight: bold;
 
   &:hover {
-    color: Red;
+    color: brown;
   }
 `;
 

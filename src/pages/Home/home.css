@@ -1,0 +1,61 @@
+.main{
+    background-color: #fffbf2;
+}
+
+.spacer{
+    width: 100vw;
+    height: 20vh;
+}
+
+.mainContent{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100vw;
+    height: 75vh;
+}
+
+.leftContent {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange the elements vertically */
+    align-items: flex-start;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 5%;
+    z-index: 2;
+}
+
+.smallText{
+    width: 25vw;
+}
+
+.homePicture{
+    position: relative;
+    width: 752px;
+    height:fit-content;
+    top: 0%;
+    right: -15%;
+}
+.title{
+    color: #000;
+    font-size: 300px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -15px;
+    z-index: 3;
+    margin-bottom: -50px;
+
+}
+
+.mainText{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: underline;
+    color: #000;
+}
