@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Leo/static/css/main.044578a6.css",
-    "main.js": "/Leo/static/js/main.75c1b625.js",
+    "main.js": "/Leo/static/js/main.101e8c5d.js",
     "static/js/787.bf228cb3.chunk.js": "/Leo/static/js/787.bf228cb3.chunk.js",
     "static/media/video2.mp4": "/Leo/static/media/video2.538861e90b04a4e196b7.mp4",
     "static/media/learned.jpg": "/Leo/static/media/learned.2961ee0c2f6e2a94d349.jpg",
@@ -23,11 +23,11 @@
     "static/media/scrumban.png": "/Leo/static/media/scrumban.207a5f0f7aff1f0273b4.png",
     "index.html": "/Leo/index.html",
     "main.044578a6.css.map": "/Leo/static/css/main.044578a6.css.map",
-    "main.75c1b625.js.map": "/Leo/static/js/main.75c1b625.js.map",
+    "main.101e8c5d.js.map": "/Leo/static/js/main.101e8c5d.js.map",
     "787.bf228cb3.chunk.js.map": "/Leo/static/js/787.bf228cb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.044578a6.css",
-    "static/js/main.75c1b625.js"
+    "static/js/main.101e8c5d.js"
   ]
 }
