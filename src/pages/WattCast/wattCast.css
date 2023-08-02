@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wattTitle{
+    background-color: #DE7C09;
+}
+
+.wattTitle img{
+    width: 100vw;
+    height: 60vh;
+    object-fit:cover;
+}
+
+.wattText{
+    background-color: #DE7C09;
+}
+
+.Testcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    height: 40vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.Testbox{
+    margin-top: 5vh;
+    line-height: 3vh;
+    color:white;
+}
+
+.summary{
+    width: 30vw;
+}
+
+.button{
+    margin-top: 5vh;
+    display: flex;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+}
+    
+.goal{
+    margin-top: 10vh;
+    margin-left: 20vw;
+    width: 60vw;
+    height: auto;
+    line-height: 3vh;
+}
+
+.goal p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mockup1{
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+.mockup1 video{
+    width: 70vw;
+    height: auto;
+    padding: 5vh;
+}
+
+.keyChallenges{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    height: auto;
+}
+
+.key{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.keyChallenges h1 {
+    color: #333333;
+}
+
+.key p{
+    color: #333333;
+}
+.column{
+    padding-right: 5vw;
+}
+
+
+.row{
+    display:flex
+}
+.mockup2{
+    margin-top: 10vh;
+    width: 100vw;
+    height: auto;
+}
+
+.mockup2 img{
+    width: 100vw;
+    height: auto;
+}
+
+
+.process{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    width: 80vw;
+
+}
+
+.process img{
+    height: 30vw;
+}
+
+.designText{
+    margin-top: 5vh;
+    width: 30vw;
+    line-height: 3vh;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #333333;
+    margin-top: 10vh;
+}
+
+.techBox{
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.techBox h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #DE7C09;
+}
+
+.scrum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+    width: 80vw;
+    margin-top: 5vh;
+}
+.scrum p{
+    text-align: center;
+}
+
+.learned h1{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-bottom: -5vh;
+}
+.lessons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    width: 80vw;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+.figma{
+    transition-delay: 1s;
+}
+.lessons p{
+    margin-top: 5vh;
+}
+.lessons img{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 40vw;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wattText h1 {
+    font-size: 12px;
+    }
+    .wattText p{
+        font-size: 16px;
+    }
+    .button{
+        width: 15vw;
+    }
+    .goal p{
+        font-size: 14px;
+    }
+
+    .mockup1 video{
+        width: 100vw;
+    }
+    .key{
+        flex-direction: column;
+    }
+
+    .designText{
+        width: 80vw;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .technologies{
+        flex-direction: column;
+    }
+    .techBox{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .lessons{
+        flex-direction: column;
+    }
+    
+    }
