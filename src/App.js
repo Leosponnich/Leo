@@ -22,7 +22,7 @@ const App = () => {
       <ScrollToTop />
       <AnimatePresence initial={false} >
         <Routes key={Route.pathname}>
-          <Route exact path="Leo" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="work" element={<Work />} />
           <Route path="about" element={<About />} />
           <Route path="shfl" element={<SHFL />} />
