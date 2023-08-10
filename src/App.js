@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
+import {Analytics} from 'vercel/analytics/react';
 
 import Header from './components/Header/header';
 import './components/Header/header.css';
@@ -16,6 +17,7 @@ import ScrollToTop from './components/start/scroll';
 
 const App = () => {
   return (
+    <>
     <Router>
       <Header />
       <ScrollToTop />
@@ -30,6 +32,8 @@ const App = () => {
         </AnimatePresence>
       <Footer />
     </Router>
+    <Analytics/>
+    </>
   );
 };
 
