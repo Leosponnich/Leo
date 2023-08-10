@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
-import {Analytics} from 'vercel/analytics/react';
-
 import Header from './components/Header/header';
 import './components/Header/header.css';
 import './pages/Home/home.css';
@@ -32,7 +30,6 @@ const App = () => {
         </AnimatePresence>
       <Footer />
     </Router>
-    <Analytics/>
     </>
   );
 };

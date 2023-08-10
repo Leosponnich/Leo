@@ -4,6 +4,54 @@
     left: 0%;
 }
 
+.top-bar{
+    height: auto;
+    background-color: #4D321F;
+    display: flex;
+    justify-content: row;
+    color: white;
+    text-align: left;
+}
+.top-bar h1{
+    margin-top: 10vh;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5svh;
+    margin-left: 10vw;
+    width: 80vw;
+
+}
+
+.experience div{
+    margin-left: 30vw;
+    text-align: left;
+}
+
+.experience div h1{
+    font-size: 16px;
+}
+
+.experience div h2{
+    font-size: 14px;
+}
+
+
+
+.horizontal-line{
+    border-top: 1px solid black;
+    margin-left: 10vw;
+    width: 80vw;
+    margin-top: 5svh;
+}
+
 .spacer{
     width: 100vw;
     height: 20vh;
@@ -54,4 +102,34 @@
     color: #FFF;
     font-size: 16px;
     font-weight: 600;
+}
+
+
+.contact h1{
+    text-align: center;
+    font-size: 100px;
+    color: #36454F;
+}
+
+.contact p{
+    text-align: center;
+    color: #4D321F;
+}
+
+.contact-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 5svh;
+}
+
+.mail{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen { 
+    
 }

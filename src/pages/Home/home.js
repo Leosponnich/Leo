@@ -59,15 +59,15 @@ const Home = () => {
           
           <div className="row">
           <div className="box">
-            <Link to='/shfl'>
-          <img src={box1}></img>
+            <Link to='/work'>
+          <img src={box3}/>
           </Link>
-            <h2>Portfolio</h2>
-            <p>UX/UI React</p>
+            <h2>Travel</h2>
+            <p>Picturebook</p>
           </div>
           <div className="box">
             <Link to="/portefolio">
-          <img src={box3}></img>
+          <img src={box1}/>
           </Link>
             <h2>GelaQuiz</h2>
             <p>IN1060 Design with users project</p>

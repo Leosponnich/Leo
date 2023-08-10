@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import styled, {css} from 'styled-components';
-import image1_1 from '../../elements/leo.png';
-import image1_2 from '../../elements/leo.png';
-import image2_1 from '../../elements/leo.png';
-import image2_2 from '../../elements/leo.png';
-import image3_1 from '../../elements/leo.png';
-import image3_2 from '../../elements/leo.png';
-import image4_1 from '../../elements/leo.png';
-import image4_2 from '../../elements/leo.png';
-import image5_1 from '../../elements/Travel2.jpeg';
-import image5_2 from '../../elements/Travel.jpeg';
+import image1_1 from '../../elements/Roma1.jpeg';
+import image1_2 from '../../elements/Roma2.jpeg';
+import image2_1 from '../../elements/Gu1.jpeg';
+import image2_2 from '../../elements/gu2.jpeg';
+import image3_1 from '../../elements/pa1.JPEG';
+import image3_2 from '../../elements/Travel.jpeg';
+import image4_1 from '../../elements/monopoli1.JPEG';
+import image4_2 from '../../elements/monopoli2.JPG';
+import image5_1 from '../../elements/ostuni1.jpeg';
+import image5_2 from '../../elements/ostuni2.jpeg';
+import './work.css';
 
 const MyWorkContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #fffbf2;
+  height: 100svh;
+  
 `;
 
 const WorkList = styled.ul`
@@ -35,48 +36,59 @@ const WorkItem = styled.li`
   margin: -10px;
   cursor: pointer;
   transition: color 0.3s ease;
-  z-index: 2;
+  z-index: 100;
 
   &:hover {
     -webkit-text-stroke: 0px #000000;
     color: #252525; /* Change the hover color as needed */
   }
   ${props =>
-    props.even &&
+    props.$even &&
     css`
       transform: translateX(-30px);
     `}
 
   ${props =>
-    props.odd &&
+    props.$odd &&
     css`
       transform: translateX(40px);
     `}
+
+    @media (max-width: 408px){
+      font-size:30px;
+    }
 `;
 
 const ImageWrapper = styled.div`
-  position: fixed;
-  width: 150px;
-  height: 100px;
-  visibility: ${props => (props.isVisible ? 'visible' : 'hidden')};
+  visibility: ${props => (props.$isVisible ? 'visible' : 'hidden')};
   transition: visibility 0.3s ease;
 `;
 
 const LeftImage = styled.img`
+  top:100px;
   position: fixed;
-  bottom: 50px;
-  left: 10px;
-  width: 250px;
-  height: 200px;
+  left: 30px;
+  width: 30vw;
+  z-index:1;
+
+  @media (max-width: 768px){
+    width: 60vw;
+  }
 `;
 
 const RightImage = styled.img`
   position: fixed;
-  bottom: 200px;
-  right: 10px;
-  width: 250px;
-  height: 350px;
-  z-index: 1
+  bottom: 0;
+  right: 0;
+  width: 40vw;
+  z-index: 1;
+
+  @media (max-width: 768px){
+    width: 60vw;
+    right: 80px;
+    bottom: 130px;
+    
+  }
 `;
 
 const Work = () => {
@@ -89,24 +101,23 @@ const Work = () => {
   const handleMouseLeave = () => {
     setSelectedWord(null);
   };
-  const words = ['WattCast', 'SHFL.', 'Portfolio', 'GelaQuiz', 'Travel'];
+  const words = ['Rome', 'Guilianova', 'Polignano a mare', 'Monopoli', 'Ostuni'];
   const wordImages = {
-    'WattCast': [image1_1, image1_2],
-    'SHFL.': [image2_1, image2_2],
-    'Portfolio': [image3_1, image3_2],
-    'GelaQuiz': [image4_1, image4_2],
-    'Travel': [image5_1, image5_2],
+    'Rome': [image1_1, image1_2],
+    'Guilianova': [image2_1, image2_2],
+    'Polignano a mare': [image3_1, image3_2],
+    'Monopoli': [image4_1, image4_2],
+    'Ostuni': [image5_1, image5_2],
   };
 
   return (
     <MyWorkContainer>
       <WorkList>
         {words.map((word,index) => (
-
         <WorkItem
             key={index}
-            even={index%2 ===0}
-            odd={index%2 !==0}
+            $even={index%2 ===0}
+            $odd={index%2 !==0}
             onMouseEnter={() => handleWordClick(word)} 
             onMouseLeave={handleMouseLeave}
                 style={{
@@ -118,7 +129,7 @@ const Work = () => {
         </WorkItem>
         ))}
       </WorkList>
-      <ImageWrapper isVisible={selectedWord !== null}>
+      <ImageWrapper $isVisible={selectedWord !== null}>
         {selectedWord !== null && (
           <>
             <LeftImage src={wordImages[selectedWord][0]} alt={`${selectedWord}-left`} />

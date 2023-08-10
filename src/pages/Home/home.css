@@ -20,7 +20,7 @@
 .banner{
     position:relative;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     display: flex;
 
 }
@@ -46,7 +46,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #000;
-    line-height:100vh;
+    line-height:100svh;
     mix-blend-mode: screen;
 
 }
@@ -54,9 +54,9 @@
 .bottomText{
     display: flex;
     flex-direction: row;
-    top: 90vh;
+    top: 90svh;
     position:absolute;
-    width: 100vw;
+    width: 100svw;
     mix-blend-mode: multiply;
     justify-content: space-between;
 }
@@ -186,33 +186,6 @@
     width: 100vw;
     height: 100vh;
     background-color: #333333;
-}
-
-.contact{
-    width: 100vw;
-    height: 100vh;
-    background-color: #333333;
-    margin-top: 5vh;
-}
-
-.contactMain{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 80vw;
-    height: 100vh;
-}
-
-.contactMain h1{
-    text-align: center;
-    font-size: 100px;
-    line-height: 60vh;
-}
-
-.contactMain p{
-    text-align: center;
-
 }
 
 @media only screen and (max-width: 600px) {
