@@ -50,19 +50,20 @@ const Home = () => {
             <p>UX/UI React</p>
           </div>
           <div className="box1">
-            <Link to='/shfl'>
-          <img src={box1}></img>
-          </Link>
-            <h2>Portfolio</h2>
-            <p>UX/UI React</p>
-          </div>
-          <div className="row">
-          <div className="box">
             <Link to="/WattCast">
             <img src={box2}></img>
             </Link>
             <h2>WattCast</h2>
             <p>IN2000 Software engineering project</p>
+          </div>
+          
+          <div className="row">
+          <div className="box">
+            <Link to='/shfl'>
+          <img src={box1}></img>
+          </Link>
+            <h2>Portfolio</h2>
+            <p>UX/UI React</p>
           </div>
           <div className="box">
             <Link to="/portefolio">

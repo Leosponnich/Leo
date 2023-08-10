@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
 
-
 import Header from './components/Header/header';
 import './components/Header/header.css';
 import './pages/Home/home.css';
@@ -22,7 +21,7 @@ const App = () => {
       <ScrollToTop />
       <AnimatePresence initial={false} >
         <Routes key={Route.pathname}>
-          <Route exact path="Leo" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="work" element={<Work />} />
           <Route path="about" element={<About />} />
           <Route path="shfl" element={<SHFL />} />
