@@ -38,6 +38,7 @@ const WattCast = () =>{
             <div className="Testbox summary">                
                 <p>SUMMARY</p>
                 <h1>I held the primary responsibility for the design aspect of the project.</h1>
+                <br/>
                 <h1>IN2000 Software engineering project</h1>
                 <div className="button">
                     <p>github</p>
