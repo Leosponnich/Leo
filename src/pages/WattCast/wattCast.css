@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+h1{
+    color: slategray;
+    font-size: 16px;
+}
 .wattTitle{
     background-color: #DE7C09;
 }
@@ -25,6 +31,7 @@
     height: 40svh;
     margin-left: 10vw;
     margin-right: 10vw;
+
 }
 
 .Testbox{
@@ -38,25 +45,37 @@
 }
 
 .button{
-    margin-top: 5vh;
+    margin-top: 2svh;
     display: flex;
     border: 2px solid white;
     justify-content: center;
     align-items: center;
     width: 10vw;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
 }
     
 .goal{
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-left: 20vw;
     width: 60vw;
     height: auto;
     line-height: 3vh;
+    text-align: center;
 }
 
 .goal p{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .mockup1{
@@ -74,6 +93,7 @@
 .keyChallenges{
     margin-left: 10vw;
     margin-right: 10vw;
+    padding-bottom: 10svh;
     width: 80vw;
     height: auto;
 }
@@ -83,12 +103,14 @@
     flex-direction: row;
     justify-content: space-around;
 }
-.keyChallenges h1 {
+
+.keyChallenges h2{
     color: #333333;
 }
 
 .key p{
     color: #333333;
+    font-weight: 500;
 }
 .column{
     padding-right: 5vw;
@@ -99,9 +121,9 @@
     display:flex
 }
 .mockup2{
-    margin-top: 10vh;
     width: 100vw;
     height: auto;
+    background-color: black;
 }
 
 .mockup2 img{
@@ -111,14 +133,20 @@
 
 
 .process{
-    margin-top: 5vh;
+    padding-top: 5vh;
     margin-left: 10vw;
+    padding-bottom: 20svh;
     width: 80vw;
 
 }
 
+.process p{
+    font-weight: 500;
+}
+
 .process img{
-    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
 }
 
 .designText{
@@ -127,12 +155,14 @@
     line-height: 3vh;
 }
 
+.watt-technologies{
+    background-color: #F69622;
+}
+
 .technologies{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #333333;
-    margin-top: 10vh;
 }
 
 .techBox{
@@ -142,9 +172,9 @@
 }
 
 .techBox h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    color: #DE7C09;
+    color: #fff;
 }
 
 .scrum{
@@ -153,22 +183,24 @@
     justify-content: center;
     margin-left: 10vw;
     width: 80vw;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 .scrum p{
     text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .learned h1{
-    margin-top: 10vh;
+    padding-top: 10vh;
     margin-left: 10vw;
     margin-bottom: -5vh;
 }
 .lessons{
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     margin-left: 10vw;
     width: 80vw;
     justify-content: center;
@@ -180,22 +212,30 @@
 }
 .lessons p{
     margin-top: 5vh;
+    font-size: 20px;
 }
 .lessons img{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     width: 40vw;
     height: auto;
 }
+
 
 
 @media only screen and (max-width: 600px) {
     .wattText h1 {
     font-size: 12px;
     }
+
+    .wattText h2{
+        font-size: 14px;
+    }
     .wattText p{
         font-size: 16px;
     }
+
+
     .button{
         width: 15vw;
     }
@@ -210,12 +250,33 @@
         flex-direction: column;
     }
 
+    .key h1{
+        font-size: 12px;
+    }
+
+
+    .key h2{
+        font-size: 16px;
+    }
+
+    .key p{
+        font-size: 12px;
+    }
+
     .designText{
         width: 80vw;
+        font-weight: 500;
+    }
+    .designText h2{
+        font-size: 16px;
     }
 
     .row{
         flex-direction: column;
+    }
+
+    .process img{
+        width: 100%;
     }
 
     .technologies{
@@ -228,6 +289,11 @@
 
     .lessons{
         flex-direction: column;
+        
+    }
+
+    .lessons p{
+        font-size: 14px;
     }
     
     }

@@ -1,13 +1,12 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { useInView } from "react-intersection-observer";
 import './wattCast.css';
 import TitleImg from '../../elements/wattCastTitle.jpg';
-import mockup1 from '../../elements/wattCastMain.png';
 import mockup2 from '../../elements/wattcast.png';
 import design1 from '../../elements/userTesting.jpg';
 import design2 from '../../elements/figmaWattcast.png';
 import design3 from '../../elements/workshopWC.jpg';
-import video from '../../elements/wattCastVideo.mp4';
+import video from '../../elements/wattCastVideo2.mov';
 import scrumban from '../../elements/scrumban.png';
 import learned from '../../elements/learned.jpg';
 
@@ -16,6 +15,18 @@ const WattCast = () =>{
     const {ref: myRef, inView:myElement} = useInView();
     const {ref: myRef2, inView:myElement2} = useInView();
     const {ref: info, inView:myLearned} = useInView();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     return(
         <div>
@@ -23,25 +34,28 @@ const WattCast = () =>{
                 <img src={TitleImg}/>
             </section>
             <section className="wattText">
-            <div class="Testcontainer">
+            <div className="Testcontainer">
                 <div className="column">
                     <div className="Testbox">
                     <p>Client</p>
-                    <h1>Metrologisk institutt</h1>
+                    <h2>Metrologisk institutt</h2>
                     </div>
                     <div className="Testbox">
                         <p>My role</p>
-                        <h1>UX Designer</h1>
-                        <h1>UI Designer</h1>
+                        <h2>UX Designer</h2>
+                        <h2>UI Designer</h2>
                     </div>
                 </div>
             <div className="Testbox summary">                
                 <p>SUMMARY</p>
-                <h1>I held the primary responsibility for the design aspect of the project.</h1>
-                <br/>
-                <h1>IN2000 Software engineering project</h1>
-                <div className="button">
-                    <p>github</p>
+                <h2>I held the primary responsibility for the design aspect of the project.</h2>
+                <div className="row">
+                    <a href="https://github.com/Leosponnich/wattCast"> <div className="button">
+                        <p>github</p>
+                    </div></a>
+                    <a href="https://www.figma.com/file/MJjT1oMm9SgKzokqedp5LG/IN2000-prosjekt?type=design&node-id=0%3A1&mode=design&t=4upON7is8hHNggZB-1"> <div className="button">
+                        <p>Figma</p>
+                    </div></a>
                 </div>
             </div>
             
@@ -56,7 +70,7 @@ const WattCast = () =>{
             </section>
             <section className="mockup1">
                 <div>
-                <video src={video} muted autoPlay loop/>
+                {isMobile ? <img src={design2}/>  : <video src={video} autoPlay muted></video>}
                 </div>
             </section>
             <section className='keyChallenges'>
@@ -64,29 +78,29 @@ const WattCast = () =>{
                 <div className="key">
                 <div className="column">
                     <div className="Testbox">
-                    <h1>1. User Understanding and Empathy</h1>
+                    <h2>1. User Understanding and Empathy</h2>
                     <p>Understanding user needs and empathizing with their goals and pain points is essential for designing products that truly cater to their requirements.</p>
                     </div>
                     <div className="Testbox">
-                        <h1>2. Consistency and Branding</h1>
+                        <h2>2. Consistency and Branding</h2>
                         <p>Maintaining consistency in design elements and aligning them with the brand's identity is crucial for a coherent and recognizable user experience.</p>                   
                         </div>
                     <div className="Testbox">
-                        <h1>3. Mobile Responsiveness and Multi-platform Compatibility</h1>
+                        <h2>3. Mobile Responsiveness and Multi-platform Compatibility</h2>
                         <p>Designing for various devices, screen sizes, and operating systems demands adaptability and responsiveness. Ensuring seamless user experiences across desktop, tablets, smartphones, and other devices is a significant challenge.</p>
                     </div>
                 </div>
                 <div className="column">
                 <div className="Testbox">
-                    <h1>4. Accessibility and Inclusivity</h1>
+                    <h2>4. Accessibility and Inclusivity</h2>
                     <p>Creating designs that are accessible to users of all abilities is essential. Designers must consider factors such as color contrast, screen readers, keyboard navigation, and other assistive technologies to ensure inclusivity.</p>
                     </div>
                     <div className="Testbox">
-                        <h1>5. Balancing Aesthetics with Functionality</h1>
+                        <h2>5. Balancing Aesthetics with Functionality</h2>
                         <p>Designing visually appealing interfaces while ensuring ease of use and efficient task completion is a delicate balancing act. Striking the right balance between aesthetics and functionality is a constant challenge for designers.</p>
                     </div>
                     <div className="Testbox">
-                        <h1>6. Usability Testing and Iteration</h1>
+                        <h2>6. Usability Testing and Iteration</h2>
                         <p>Conducting usability testing and incorporating user feedback is essential for refining designs. Regular iterations based on user insights help identify and address usability issues and improve overall user satisfaction.</p>
                     </div>
                     </div>
@@ -99,6 +113,8 @@ const WattCast = () =>{
                 <img src={mockup2}/>
                 </div>
             </section>
+
+
             <section className="process">
                 <h1>Design Process</h1>
                 <div className="row">
@@ -124,7 +140,9 @@ const WattCast = () =>{
                     <img src={design3} />
                 </div>
             </section>
-            <section className="technologies">
+
+            <section className="watt-technologies">
+                <div className="technologies">
                 <div className="techBox">
                     <h1>Android studio</h1>
                     <p>We used Andorid Studio and kotlin programming language to develop the core of "WattCast" and implement the predictive algorithms to calculate future electricity prices based on weather data.
@@ -138,6 +156,7 @@ const WattCast = () =>{
                     <h1>Figma</h1>
                     <p>For user interface design, we utilized Figma, a powerful tool for collaboration and prototyping. This enabled a rapid iterative design process, resulting in an intuitive and user-friendly interface.
 </p>                
+                </div>
                 </div>
         
             </section>

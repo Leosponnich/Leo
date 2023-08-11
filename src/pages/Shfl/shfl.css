@@ -4,10 +4,124 @@
 
 .shflTitle img{
     width: 100vw;
-    height: 60vh;
+    height: 60svh;
     object-fit:cover;
 }
 
 .shflText{
     background-color: black;
+}
+
+
+.shfl-goal-box{
+    background-color: black;
+}
+
+.shfl-goal{
+    padding-top: 20vh;
+    margin-left: 20vw;
+    padding-bottom: 20svh;
+    width: 60vw;
+    height: auto;
+    line-height: 3vh;
+    text-align: center;
+}
+
+.shfl-goal p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.shfl{
+    color: red;
+}
+
+.mockup{
+    background-color: black;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 15svh;
+    
+}
+
+.mockup video{
+    max-width: 20vw;
+}
+.mockup img{
+    object-fit:cover;
+    width: 100vw;
+}
+
+.shfl-keyChallenges{
+    padding-top: 10svh;
+    background-color: #A63D40;
+}
+.shfl-keyChallenges h1{
+    color: white;
+}
+.shfl-keyChallenges h2{
+    color: white;
+}
+.shfl-keyChallenges p{
+    color: white;
+}
+
+.shfl-process{
+    background-color: black;
+}
+
+.shfl-process h1{
+    color: white;
+}
+
+.shfl-process h2{
+    color: white;
+}
+.shfl-process p{
+    color: white;
+}
+
+.shfl-technologies{
+    background-color: #A63D40;
+    padding-top: 5svh;
+    padding-bottom: 5svh;
+}
+
+.shfl-tech{
+    background-color: black;
+    padding-top: 5svh;
+    padding-bottom: 5svh;
+}
+
+.shfl-tech h1{
+    color: white;
+}
+
+.shfl-tech p{
+    color:white;
+}
+
+.shfl-learned{
+    background-color: black;
+}
+
+.shfl-learned h1{
+    color: white;
+}
+.shfl-learned p{
+    color: white;
+} 
+@media only screen and (max-width: 600px) {
+    .shflText h1 {
+    font-size: 12px;
+    }
+
+    .shflText h2{
+        font-size: 14px;
+    }
+    .shflText p{
+        font-size: 16px;
+    }
 }

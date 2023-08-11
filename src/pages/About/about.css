@@ -1,16 +1,23 @@
 .main{
-    background-color: #fffbf2;
     top: 0;
     left: 0%;
+    right: 0%;
+
+}
+
+.main p{
+    font-weight: 500;
+}
+
+.main h1{
+    color: #A63D40;
 }
 
 .top-bar{
     height: auto;
-    background-color: #4D321F;
+    background-color: #A63D40;
     display: flex;
-    justify-content: row;
-    color: white;
-    text-align: left;
+    flex-direction: row;
 }
 .top-bar h1{
     margin-top: 10vh;
@@ -18,28 +25,48 @@
     margin-bottom: 2vh;
     font-size: 20px;
     font-weight: 500;
+    color: white;
+}
+
+.top-bar img{
+    object-fit: contain;    
+}
+
+.text{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5svh;
+    margin-top: 15svh;
     margin-left: 10vw;
     width: 80vw;
-
 }
 
-.experience div{
-    margin-left: 30vw;
-    text-align: left;
+.job{
+    margin-top: 4vh;
 }
 
-.experience div h1{
+.width{
+    width: 40%;
+}
+
+.rows{
+    margin-top: 0vh;
+}
+
+
+
+.experience h1{
     font-size: 16px;
 }
 
-.experience div h2{
+.experience h2{
     font-size: 14px;
 }
 
@@ -52,84 +79,27 @@
     margin-top: 5svh;
 }
 
-.spacer{
-    width: 100vw;
-    height: 20vh;
-}
+@media only screen and (max-width: 600px) {
+    .top-bar{
+        flex-direction: column;
+    }
 
-.aboutMainContent{
-    display: flex;
-    justify-content:space-evenly;
-    width: 100vw;
-    height: 75vh;
-}
-
-.aboutLeftContent {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Arrange the elements vertically */
-    width: 40vw;
+    .text{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
     
-}
+    .top-bar img{
+        width: 40vw;
+        justify-content: center;
+        text-align: center;
+    }
 
-.brownBox{
-    background-color:#4D321F ;
-}
-
-.smallTextBox{
-    width: 40vw;
-}
-
-.picture{
-    position: relative;
-    width: 20vw;
-    height:fit-content;
-}
-
-.bigText{
-    color: #000;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.aboutMainText{
-    color: #36454F;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.brownBoxText{
-    padding-left: 2vw;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-.contact h1{
-    text-align: center;
-    font-size: 100px;
-    color: #36454F;
-}
-
-.contact p{
-    text-align: center;
-    color: #4D321F;
-}
-
-.contact-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 5svh;
-}
-
-.mail{
-    text-decoration: none;
-    color: black;
-}
-
-
-@media screen { 
+    .experience{
+        flex-direction: column;
+    }
+    .width{
+        width: 100%;
+    }
     
 }
