@@ -4,6 +4,7 @@ import video from '../../elements/video2.mp4';
 import box1 from '../../elements/party.jpg';
 import box2 from '../../elements/wattCastMain.png';
 import box3 from '../../elements/Travel.jpeg';
+import box4 from '../../elements/gelateam.png'
 import { useInView } from "react-intersection-observer";
 import { motion as m } from "framer-motion";
 
@@ -81,8 +82,8 @@ const Home = () => {
                 <p>Picturebook</p>
               </div>
               <div className="box">
-                <Link to="/gelaQuiz">
-                <img src={box1}/>
+                <Link to="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v22/prosjekter-var-2022/gelateam/">
+                <img src={box4}/>
                 </Link>
                 <h2>GelaQuiz</h2>
                 <p>IN1060 Design with users project</p>

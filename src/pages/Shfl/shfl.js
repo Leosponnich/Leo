@@ -54,12 +54,11 @@ const Shfl = () =>{
                     <a href=""> <div className="button">
                         <p>Play SHFL!</p>
                     </div></a>
-                    <a href="https://www.figma.com/file/MJjT1oMm9SgKzokqedp5LG/IN2000-prosjekt?type=design&node-id=0%3A1&mode=design&t=4upON7is8hHNggZB-1"> <div className="button">
+                    <a href="https://www.figma.com/file/uynZ5MJCfwwhqKcmGexrDk/SHFL?type=design&node-id=0%3A1&mode=design&t=YEEo3m0OYsg0n3vs-1"> <div className="button">
                         <p>Figma</p>
                     </div></a>
                 </div>
             </div>
-            
             </div>
             </section>
             <section className="shfl-goal-box">
@@ -77,7 +76,7 @@ const Shfl = () =>{
             <section className='shfl-keyChallenges'>
                 <div className="keyChallenges">
                 <h1>Key Challenges</h1>
-                <div className="key">
+                <div className="shfl-key">
                 <div className="column">
                     <div className="Testbox">
                         <h2>1. User-Centric Experience:</h2>

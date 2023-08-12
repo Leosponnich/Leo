@@ -61,10 +61,17 @@
 .shfl-keyChallenges h1{
     color: white;
 }
-.shfl-keyChallenges h2{
+.shfl-key{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.shfl-key h2{
     color: white;
 }
-.shfl-keyChallenges p{
+
+.shfl-key p{
     color: white;
 }
 

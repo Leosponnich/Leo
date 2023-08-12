@@ -8,7 +8,6 @@ import './elements/styles.css';
 import Home from './pages/Home/home';
 import Work from './pages/Work/work';
 import SHFL from './pages/Shfl/shfl';
-import GelaQuiz from './pages/GelaQuiz/gelaQuiz';
 import WattCast from './pages/WattCast/wattCast';
 import About from './pages/About/about';
 import Footer from './components/Footer/footer';
@@ -28,7 +27,6 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="shfl" element={<SHFL />} />
           <Route path="WattCast" element={<WattCast />} />
-          <Route path='gelaQuiz' element={<GelaQuiz/>}/>
         </Routes>
         </AnimatePresence>
       <Footer />
