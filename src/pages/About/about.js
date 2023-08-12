@@ -78,42 +78,40 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <section className="experience">
-        <h1>Education</h1>
-        <div className="column width">
-          <div className="job">
-            <h1>Computer Science - Design, Use and Interactions</h1>
-            <h2>University of Oslo, Oslo, 2024</h2>
+      <section className="fill">
+        <section className="experience">
+          <h1>Education</h1>
+          <div className="column width">
+            <div className="job">
+              <h1>Computer Science - Design, Use and Interactions</h1>
+              <h2>University of Oslo, Oslo, 2024</h2>
+            </div>
+            <div className="job">
+              <h1>Guard of the Royal Guard</h1>
+              <h2>His Majesty The king´s Guard, Oslo, 2020</h2>
+            </div>
           </div>
-          <div className="job">
-            <h1>Guard of the Royal Guard</h1>
-            <h2>His Majesty The king´s Guard, Oslo, 2020</h2>
+        </section>
+        <section className="experience">
+          <h1>Certificate</h1>
+          <div className="column width">
+            <div className="job">
+              <h1>Build an App in a Weekend</h1>
+              <h2>KPMG, 2023</h2>
+              <p>Gained experience with ServiceNow</p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="experience">
-        <h1>Certificate</h1>
-        <div className="column width">
-          <div className="job">
-            <h1>Build an App in a Weekend</h1>
-            <h2>KPMG, 2023</h2>
-            <p>Gained experience with ServiceNow</p>
+        </section>
+        <section className="experience">
+          <h1>Courses</h1>
+          <div className="column width">
+            <div className="job">
+              <h1>IN2010 Algorithms and Data Structures</h1>
+              <h2>University of Oslo, 2023, Problem-solving</h2>
+              <p>Breaking down complex problems into smaller parts and designing algorithms to solve them.</p>
+            </div>
           </div>
-        </div>
-      </section>
-
-
-      <section className="experience">
-        <h1>Courses</h1>
-        <div className="column width">
-          <div className="job">
-            <h1>IN2010 Algorithms and Data Structures</h1>
-            <h2>University of Oslo, 2023, Problem-solving</h2>
-            <p>Breaking down complex problems into smaller parts and designing algorithms to solve them.</p>
-          </div>
-        </div>
+        </section>
       </section>
      
       
