@@ -39,7 +39,7 @@ const Shfl = () =>{
                 <div className="column">
                     <div className="Testbox">
                     <p>Project</p>
-                    <h2>SHFL</h2>
+                    <h2>SHFL.</h2>
                     </div>
                     <div className="Testbox">
                         <p>My role</p>
@@ -155,8 +155,12 @@ const Shfl = () =>{
             <section className="shfl-technologies">
                 <div className="technologies">
                 <div className="techBox">
-                    <h1>Firebase</h1>
+                    <h1>Node/Express</h1>
                     <p>For backend services and real-time data synchronization.</p>
+                </div>
+                <div className="techBox">
+                    <h1>Firebase</h1>
+                    <p>Database</p>
                 </div>
                 <div className="techBox">
                     <h1>Git</h1>

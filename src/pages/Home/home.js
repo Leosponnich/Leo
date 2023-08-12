@@ -81,7 +81,7 @@ const Home = () => {
                 <p>Picturebook</p>
               </div>
               <div className="box">
-                <Link to="/portefolio">
+                <Link to="/gelaQuiz">
                 <img src={box1}/>
                 </Link>
                 <h2>GelaQuiz</h2>

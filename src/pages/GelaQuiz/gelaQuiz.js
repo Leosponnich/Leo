@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { useInView } from "react-intersection-observer";
-import './wattCast.css';
+import './gelaQuiz.css';
 import TitleImg from '../../elements/wattCastTitle.jpg';
 import mockup2 from '../../elements/wattcast.png';
 import design1 from '../../elements/userTesting.jpg';
@@ -11,7 +11,7 @@ import scrumban from '../../elements/scrumban.png';
 import learned from '../../elements/learned.jpg';
 
 
-const WattCast = () =>{
+const GelaQuiz = () =>{
     const {ref: myRef, inView:myElement} = useInView();
     const {ref: myRef2, inView:myElement2} = useInView();
     const {ref: info, inView:myLearned} = useInView();
@@ -38,7 +38,7 @@ const WattCast = () =>{
                 <div className="column">
                     <div className="Testbox">
                     <p>Project</p>
-                    <h2>WattCast</h2>
+                    <h2>GelaQuiz</h2>
                     </div>
                     <div className="Testbox">
                         <p>My role</p>
@@ -183,4 +183,4 @@ const WattCast = () =>{
     )
 }
 
-export default WattCast;
+export default GelaQuiz;
