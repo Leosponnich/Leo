@@ -51,9 +51,9 @@ const Shfl = () =>{
                 <p>SUMMARY</p>
                 <h2>I held the primary responsibility for the design aspect of the project.</h2>
                 <div className="row">
-                    <a href=""> <div className="button">
+                    {/*<a href=""> <div className="button">
                         <p>Play SHFL!</p>
-                    </div></a>
+    </div></a>*/}
                     <a href="https://www.figma.com/file/uynZ5MJCfwwhqKcmGexrDk/SHFL?type=design&node-id=0%3A1&mode=design&t=YEEo3m0OYsg0n3vs-1"> <div className="button">
                         <p>Figma</p>
                     </div></a>
