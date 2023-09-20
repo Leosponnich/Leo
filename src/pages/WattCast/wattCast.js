@@ -9,6 +9,11 @@ import design3 from '../../elements/workshopWC.jpg';
 import video from '../../elements/wattCastVideo2.mov';
 import scrumban from '../../elements/scrumban.png';
 import learned from '../../elements/learned.jpg';
+import TechnologyList, { Button, TechnologyBox } from "../../components/Uielements/Uielements";
+
+import androidLogo from '../../elements/Android.png';
+import gitLogo from '../../elements/GitHub.png';
+import figmaLogo from '../../elements/Figma.png';
 
 
 const WattCast = () =>{
@@ -16,6 +21,13 @@ const WattCast = () =>{
     const {ref: myRef2, inView:myElement2} = useInView();
     const {ref: info, inView:myLearned} = useInView();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+
+    const technologies = [
+        {logo: androidLogo, name: 'Android studio', description: 'Used android studio and Kotlin to devlop the app' },
+        {logo: gitLogo, name: 'Github', description: 'version control, seamless collaboration and ensuring a stable development process'},
+        {logo:figmaLogo , name: 'Figma', description: 'A powerful tool for collaboration and prototyping'}
+    ]
 
   useEffect(() => {
     const handleResize = () => {
@@ -141,28 +153,10 @@ const WattCast = () =>{
                 </div>
             </section>
 
-            <section className="watt-technologies">
-                <div className="technologies">
-                <div className="techBox">
-                    <h1>Android studio</h1>
-                    <p>We used Andorid Studio and kotlin programming language to develop the core of "WattCast" and implement the predictive algorithms to calculate future electricity prices based on weather data.
-</p>
-                </div>
-                <div className="techBox">
-                    <h1>Git</h1>
-                    <p>Git served as our primary version control system, allowing seamless collaboration, tracking changes, and ensuring a stable and structured development process.</p>
-                </div>
-                <div className="techBox">
-                    <h1>Figma</h1>
-                    <p>For user interface design, we utilized Figma, a powerful tool for collaboration and prototyping. This enabled a rapid iterative design process, resulting in an intuitive and user-friendly interface.
-</p>                
-                </div>
-                </div>
-        
-            </section>
+            <TechnologyList technologies={technologies}/>
             <section>
                 <div className="scrum">
-                    <h1>Technology and Methodology</h1>
+                    <h1>Methodology</h1>
                     <img src={scrumban}/>
                     <p>For the project, we employed Scrumban as a hybrid project management method, balancing the flexibility of Kanban with the structure of Scrum. This allowed for a smooth and efficient workflow for the team.
                     </p>

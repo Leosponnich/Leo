@@ -31,7 +31,7 @@ const LinkBox = styled.div`
 const Footer = () => {
   return (
     <FooterContainer>
-      <p>Socials</p>
+      <p>Contact:</p>
       <LinkBox>
         <a href='https://github.com/Leosponnich'><p>Github</p></a>
         <a href='https://www.linkedin.com/in/leo-aleksander-sponnich-009693235/'><p>Linkedin</p></a>

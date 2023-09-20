@@ -1,0 +1,150 @@
+  .listen-text{
+    height: 60svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background p{
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+
+  }
+
+  .listen-bg-color {
+    position: absolute; /* Change to absolute positioning */
+    top: 60svh;
+    left: 0;
+    width: 100%;
+    background-color: #3E1E68;
+    opacity: 0.7;
+    z-index: 1; /* Ensure the .bg-color appears above .background */
+  }
+
+
+  .spacer{
+    margin-top: 20svh;
+  }
+
+  .tech-container{
+    margin-bottom: 15svh;
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .tech{
+    width: 150px;
+    height:150px;
+    border-radius: 25%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-top: 5vh;
+    }
+
+  .tech.active {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  
+  .tech img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .tech-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tech-description p {
+    margin-bottom: 10px;
+  }
+  
+    .tech img{
+    object-fit:contain;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+
+.tech:hover{
+    opacity: 0.8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    transform: scale(1.10);
+}
+
+.tech-button{
+    outline: none !important;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+.component {
+    width: calc(33.33% - 20px); /* Adjust the width as needed for the desired number of components per row */
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .component.open {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+.title{
+    cursor: pointer;
+}
+
+.UX{
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+  .progress{
+    margin-top: 20svh;
+    margin-bottom: 20svh;
+    font-size: 200px;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .technologies.collapsed {
+      flex-direction: column;
+      align-items: center;
+    }
+    .background p{
+        font-size: 80px;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+  }

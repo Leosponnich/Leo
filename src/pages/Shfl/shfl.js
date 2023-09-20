@@ -11,12 +11,28 @@ import startpage from '../../elements/shflstartpage2.png';
 import learned from '../../elements/learned.jpg';
 import React, {useEffect, useState} from "react";
 
+import gitLogo from '../../elements/GitHub.png';
+import figmaLogo from '../../elements/Figma.png';
+import firebaseLogo from '../../elements/Firebase.png'
+import reactLogo from '../../elements/react.png'
+import nodeLoge from '../../elements/NodeJS.png'
+import TechnologyList from "../../components/Uielements/Uielements";
 
 const Shfl = () =>{
     const {ref: myRef, inView:myElement} = useInView();
     const {ref: myRef2, inView:myElement2} = useInView();
     const {ref: info, inView:myLearned} = useInView();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+
+    const technologies = [
+        {logo: nodeLoge, name: 'Node/Express', description: 'For backend services and real-time data synchronization.' },
+        {logo: firebaseLogo, name: 'Node/Express', description: 'For database' },
+        {logo: gitLogo, name: 'Github', description: 'version control, seamless collaboration and ensuring a stable development process'},
+        {logo:figmaLogo , name: 'Figma', description: 'A powerful tool for collaboration and prototyping'},
+        { logo: reactLogo, name: 'React', description: 'A JavaScript library for building user interfaces.' },
+
+    ]
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,7 +46,7 @@ const Shfl = () =>{
   }, []);
 
     return(
-        <div>
+        <div className="black-page">
             <section className="shflTitle">
                 <img src={TitleImg}/>
             </section>
@@ -151,31 +167,8 @@ const Shfl = () =>{
                 </div>
             </section>
 
-            <section className="shfl-technologies">
-                <div className="technologies">
-                <div className="techBox">
-                    <h1>Node/Express</h1>
-                    <p>For backend services and real-time data synchronization.</p>
-                </div>
-                <div className="techBox">
-                    <h1>Firebase</h1>
-                    <p>Database</p>
-                </div>
-                <div className="techBox">
-                    <h1>Git</h1>
-                    <p>Git served as our primary version control system, allowing seamless collaboration, tracking changes, and ensuring a stable and structured development process.</p>
-                </div>
-                <div className="techBox">
-                    <h1>Figma</h1>
-                    <p>For user interface design, we utilized Figma, a powerful tool for collaboration and prototyping. This enabled a rapid iterative design process, resulting in an intuitive and user-friendly interface.</p>                
-                </div>
-                <div className="techBox">
-                    <h1>React</h1>
-                    <p>Figma for designing and prototyping the user interface.</p>                
-                </div>
-                </div>
-        
-            </section>
+            <TechnologyList technologies={technologies} className='shfl-tech'/>
+            
             <section className="shfl-tech">
                 <div className="scrum">
                     <h1>Methodology</h1>

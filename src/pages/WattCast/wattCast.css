@@ -155,28 +155,6 @@ a{
     line-height: 3vh;
 }
 
-.watt-technologies{
-    background-color: #F69622;
-}
-
-.technologies{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.techBox{
-    padding: 30px;
-    color: #fff;
-    text-align: center;
-}
-
-.techBox h1{
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-}
-
 .scrum{
     display: flex;
     flex-direction: column;
@@ -220,7 +198,6 @@ a{
     width: 40vw;
     height: auto;
 }
-
 
 
 @media only screen and (max-width: 600px) {
@@ -277,14 +254,6 @@ a{
 
     .process img{
         width: 100%;
-    }
-
-    .technologies{
-        flex-direction: column;
-    }
-    .techBox{
-        width: 80vw;
-        margin-left: 10vw;
     }
 
     .lessons{

@@ -28,8 +28,8 @@ const Home = () => {
   return (
     
     <m.div
-      initial={{x:'100%'}}
-      animate={{x:'0%'}}
+      initial={{y:'100%'}}
+      animate={{y:'0%'}}
       transition={{duration: 0.75, ease: 'easeOut'}}
       exit={{opacity: 1}}
       className='absolute top-0 left-0'
@@ -64,15 +64,33 @@ const Home = () => {
               <img src={box1}></img>
               </Link>
               <h2>SHFL.</h2>
-              <p>UX/UI React</p>
+              <p>UX/UI and React</p>
             </div>
             <div className="box1">
-              <Link to="/WattCast">
-              <img src={box2}></img>
-              </Link>
-              <h2>WattCast</h2>
-              <p>IN2000 Software engineering project</p>
-            </div>
+                <Link to='/listen'>
+                <div className="listen-box background">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <p>LISTEN</p>
+                </div>
+                </Link>
+                <h2>Listen</h2>
+                <p>Real-time Music Sharing Web Application with React, Firebase, and Spotify API</p>
+              </div>
             <div className="row">
               <div className="box">
                 <Link to='/work'>
@@ -88,6 +106,13 @@ const Home = () => {
                 <h2>GelaQuiz</h2>
                 <p>IN1060 Design with users project</p>
               </div>
+            </div>
+            <div className="box">
+              <Link to="/WattCast">
+              <img src={box2}></img>
+              </Link>
+              <h2>WattCast</h2>
+              <p>IN2000 Software engineering project</p>
             </div>
           </div>
         </div>

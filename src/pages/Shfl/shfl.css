@@ -1,20 +1,19 @@
-.shflTitle{
+.black-page{
     background-color: black;
+    color: white;
 }
+
+.black-page .tech{
+    color: black;
+    background-color: #A63D40;
+}
+
+
 
 .shflTitle img{
     width: 100%;
     height: 60svh;
     object-fit:cover;
-}
-
-.shflText{
-    background-color: black;
-}
-
-
-.shfl-goal-box{
-    background-color: black;
 }
 
 .shfl-goal{
@@ -30,7 +29,6 @@
 .shfl-goal p{
     font-size: 20px;
     font-weight: 500;
-    color: white;
 }
 
 .shfl{
@@ -38,7 +36,6 @@
 }
 
 .mockup{
-    background-color: black;
     height: auto;
     justify-content: center;
     display: flex;
@@ -67,37 +64,14 @@
     justify-content: space-around;
 }
 
-.shfl-key h2{
-    color: white;
-}
 
-.shfl-key p{
-    color: white;
-}
-
-.shfl-process{
-    background-color: black;
-}
 
 .shfl-process h1{
     color: white;
 }
 
-.shfl-process h2{
-    color: white;
-}
-.shfl-process p{
-    color: white;
-}
-
-.shfl-technologies{
-    background-color: #A63D40;
-    padding-top: 5svh;
-    padding-bottom: 5svh;
-}
 
 .shfl-tech{
-    background-color: black;
     padding-top: 5svh;
     padding-bottom: 5svh;
 }
@@ -106,20 +80,13 @@
     color: white;
 }
 
-.shfl-tech p{
-    color:white;
-}
 
-.shfl-learned{
-    background-color: black;
-}
 
 .shfl-learned h1{
     color: white;
 }
-.shfl-learned p{
-    color: white;
-} 
+
+
 @media only screen and (max-width: 600px) {
     .shflText h1 {
     font-size: 12px;
@@ -130,5 +97,8 @@
     }
     .shflText p{
         font-size: 16px;
+    }
+    .shfl-key{
+        flex-direction: column;
     }
 }
