@@ -91,7 +91,7 @@ const Home = () => {
                 <h2>Listen</h2>
                 <p>Real-time Music Sharing Web Application with React, Firebase, and Spotify API</p>
               </div>
-            <div className="row">
+            <div className="roww">
               <div className="box">
                 <Link to='/work'>
                 <img src={box3}/>
