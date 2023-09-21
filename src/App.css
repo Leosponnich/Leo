@@ -1,3 +1,19 @@
+.title-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3svh;
+}
+
+
+.red{
+  background-color: #3B76CE !important;
+}
+
+.yellow{
+  background-color: #DE7C09 !important;
+}
+
 
 @keyframes move {
   100% {
@@ -211,4 +227,11 @@
   animation-delay: -3s;
   transform-origin: -2vw -18vh;
   box-shadow: 40vmin 0 5.8940478214908225vmin currentColor;
+}
+
+
+@media (max-width: 768px) {
+  .title-buttons{
+    flex-direction: column;
+  }
 }

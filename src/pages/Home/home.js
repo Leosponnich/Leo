@@ -4,7 +4,8 @@ import video from '../../elements/video2.mp4';
 import box1 from '../../elements/party.jpg';
 import box2 from '../../elements/wattCastMain.png';
 import box3 from '../../elements/Travel.jpeg';
-import box4 from '../../elements/gelateam.png'
+import box4 from '../../elements/gelateam.png';
+import portfolioTitle from '../../elements/portfolio-title.jpg'
 import { useInView } from "react-intersection-observer";
 import { motion as m } from "framer-motion";
 
@@ -64,7 +65,7 @@ const Home = () => {
               <img src={box1}></img>
               </Link>
               <h2>SHFL.</h2>
-              <p>UX/UI and React</p>
+              <p>Interactive party game using Spotify API and Firebase. UX/UI</p>
             </div>
             <div className="box1">
                 <Link to='/listen'>
@@ -89,7 +90,7 @@ const Home = () => {
                 </div>
                 </Link>
                 <h2>Listen</h2>
-                <p>Real-time Music Sharing Web Application with React, Firebase, and Spotify API</p>
+                <p>Real-time Music Sharing Web Application with React, Firebase, Spotify API, Vercel and GitHub</p>
               </div>
             <div className="roww">
               <div className="box">
@@ -107,13 +108,22 @@ const Home = () => {
                 <p>IN1060 Design with users project</p>
               </div>
             </div>
-            <div className="box">
-              <Link to="/WattCast">
-              <img src={box2}></img>
-              </Link>
-              <h2>WattCast</h2>
-              <p>IN2000 Software engineering project</p>
-            </div>
+            <div className="roww">
+              <div className="box">
+                <Link to="/WattCast">
+                <img src={box2}></img>
+                </Link>
+                <h2>WattCast</h2>
+                <p>IN2000 Software engineering project</p>
+              </div>
+              <div className="box">
+                <Link to="/portfolio">
+                <img src={portfolioTitle}></img>
+                </Link>
+                <h2>This portfolio</h2>
+                <p>Created using Figma, React, Vercel and GitHub</p>
+              </div>
+              </div>
           </div>
         </div>
     </m.div>

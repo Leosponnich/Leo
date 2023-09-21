@@ -9,7 +9,7 @@ import design3 from '../../elements/workshopWC.jpg';
 import video from '../../elements/wattCastVideo2.mov';
 import scrumban from '../../elements/scrumban.png';
 import learned from '../../elements/learned.jpg';
-import TechnologyList, { Button, TechnologyBox } from "../../components/Uielements/Uielements";
+import TechnologyList, { Button, TechnologyBox, GenericTitle} from "../../components/Uielements/Uielements";
 
 import androidLogo from '../../elements/Android.png';
 import gitLogo from '../../elements/GitHub.png';
@@ -42,37 +42,22 @@ const WattCast = () =>{
 
     return(
         <div>
-            <section className="wattTitle">
-                <img src={TitleImg}/>
-            </section>
-            <section className="wattText">
-            <div className="Testcontainer">
-                <div className="column">
-                    <div className="Testbox">
-                    <p>Project</p>
-                    <h2>WattCast</h2>
-                    </div>
-                    <div className="Testbox">
-                        <p>My role</p>
-                        <h2>UX Designer</h2>
-                        <h2>UI Designer</h2>
-                    </div>
-                </div>
-            <div className="Testbox summary">                
-                <p>SUMMARY</p>
-                <h2>I held the primary responsibility for the design aspect of the project.</h2>
-                <div className="row">
-                    <a href="https://github.com/Leosponnich/wattCast"> <div className="button">
-                        <p>github</p>
-                    </div></a>
-                    <a href="https://www.figma.com/file/MJjT1oMm9SgKzokqedp5LG/IN2000-prosjekt?type=design&node-id=0%3A1&mode=design&t=4upON7is8hHNggZB-1"> <div className="button">
-                        <p>Figma</p>
-                    </div></a>
-                </div>
-            </div>
-            
-            </div>
-            </section>
+            <GenericTitle
+                titleImg={TitleImg}
+                titleColor='yellow'
+                textColor='yellow'
+                projectLabel="Project"
+                projectName="WattCast"
+                roleLabel="My role"
+                roles={['UX/UI Designer', 'Developer']}
+                summaryLabel="SUMMARY"
+                summary="Electricity price predicting Android app"
+                githubLink="https://github.com/Leosponnich/wattCast"
+                githubButtonText="github"
+                figmaLink="https://www.figma.com/file/MJjT1oMm9SgKzokqedp5LG/IN2000-prosjekt?type=design&node-id=0%3A1&mode=design&t=4upON7is8hHNggZB-1"
+                figmaButtonText="Figma"
+            />
+
             <section className="goal">
                 <div>
                     <p ref={myRef2} 

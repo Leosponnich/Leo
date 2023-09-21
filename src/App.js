@@ -10,6 +10,7 @@ import Work from './pages/Work/work';
 import SHFL from './pages/Shfl/shfl';
 import WattCast from './pages/WattCast/wattCast';
 import Listen from './pages/Listen/listen';
+import Portfolio from './pages/porfolio/portfolio';
 import About from './pages/About/about';
 import Footer from './components/Footer/footer';
 import ScrollToTop from './components/start/scroll';
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="shfl" element={<SHFL />} />
           <Route path="WattCast" element={<WattCast />} />
           <Route path="listen" element={<Listen />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Routes>
         </AnimatePresence>
       <Footer />

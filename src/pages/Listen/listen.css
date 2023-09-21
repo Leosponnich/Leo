@@ -110,7 +110,7 @@
     margin: 10px;
     padding: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
+    height: max-content;
   }
   
   .component.open {
@@ -118,8 +118,30 @@
     opacity: 0.8;
   }
 
+
 .title{
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.title h1{
+    font-size: 24px;
+    margin-bottom: 1svh;
+}
+
+.title h2{
+  font-size: 16px;
+  margin-bottom: 4svh;
+  font-weight: 500;
+}
+
+.dropdown h4{
+  font-size: 16px;
+  margin-top: 3svh;
+}
+
+.dropdown p{
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .UX{
@@ -134,7 +156,37 @@
     text-align: center;
   }
   
-  
+.fullscreen-img{
+  width: 100%;
+  height: auto;
+}
+
+.medium-img{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-bottom: 10svh;
+  margin-top: 10svh;
+}
+
+.conclusion{
+  margin-top: 10svh;
+  margin-left: 10vw;
+  margin-bottom: 10svh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.conclusion img{
+  width: 50vw;
+}
+
+.conclusion p{
+  font-weight: 500;
+  margin-top: 5svh;
+}
+
   @media (max-width: 768px) {
     .technologies.collapsed {
       flex-direction: column;
@@ -143,8 +195,17 @@
     .background p{
         font-size: 80px;
     }
-    .row{
+    .row.collapsed{
         flex-direction: column;
         align-items: center;
+    }
+    .component{
+      width: 80vw;
+    }
+    .conclusion{
+      flex-direction: column;
+    }
+    .conclusion img{
+      width: 80vw;
     }
   }

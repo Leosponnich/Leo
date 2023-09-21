@@ -59,14 +59,13 @@ const Shfl = () =>{
                     </div>
                     <div className="Testbox">
                         <p>My role</p>
-                        <h2>UX Designer</h2>
-                        <h2>UI Designer</h2>
+                        <h2>UX/UI Designer</h2>
                     </div>
                 </div>
             <div className="Testbox summary">                
                 <p>SUMMARY</p>
                 <h2>I held the primary responsibility for the design aspect of the project.</h2>
-                <div className="row">
+                <div className="title-buttons">
                     {/*<a href=""> <div className="button">
                         <p>Play SHFL!</p>
     </div></a>*/}
@@ -135,14 +134,14 @@ const Shfl = () =>{
                 <div className="process">
                 <h1>Design Process</h1>
                 <p>The design process of "SHFL" consisted of several iterative stages that aimed to optimize user experience and gameplay. It involved:</p>
-                <div className="row">
+                <div className="roww">
                     <div className="designText">
                         <h2>1. Conceptualization</h2>
                         <p>Brainstorming the concept of a music-based drinking game with guessing elements, defining the rules, and outlining the core gameplay flow.</p>
                     </div>
                     <img src={design1} />
                 </div>
-                <div className="row">
+                <div className="roww">
                 <img ref={myRef} 
           className={`${'hidden'}  ${myElement ? 'show': 'hidden'}`}  src={design2} />
                     <div className="designText">
@@ -150,14 +149,14 @@ const Shfl = () =>{
                         <p>Developing wireframes and mockups using Figma to design an intuitive and engaging user interface that catered to the target audience's preferences.</p>                    
                     </div>
                 </div>
-                <div className="row">
+                <div className="roww">
                     <div className="designText">
                         <h2>3. Prototyping and Testing:</h2>
                         <p>Creating interactive prototypes to test the usability and functionality of the game's features through rigorous playtesting with friends.</p>
                     </div>
                     <img src={design3} />
                 </div>
-                <div className="row">
+                <div className="roww">
                 <img src={design4} />
                     <div className="designText">
                         <h2>4. Refinement</h2>
