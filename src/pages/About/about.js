@@ -8,6 +8,15 @@ const About = () => {
 
   const experienceData = [
     {
+      jobTitle:'UX Designer',
+      company: 'Nabostylisten',
+      date: 'September 2023 - present, Oslo',
+      description:[
+        'I have embarked on my role as a UX/UI Designer at Nabostylisten.no, contributing to the creation of visually appealing and user-friendly digital experiences.'
+      ]
+
+    },
+    {
       jobTitle:'Coding Instructor',
       company:'Learnist',
       date:'April 2022 - june 2022, Oslo',
