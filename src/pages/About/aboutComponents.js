@@ -1,6 +1,6 @@
 import React from "react";
 
-// ExperienceSection.js
+// ExperienceSection
 export const ExperienceSection = ({ data }) => (
     <section className="experience">
       <h1>Experience</h1>
@@ -22,7 +22,7 @@ export const ExperienceSection = ({ data }) => (
   );
 
 
-// EducationSection.js
+// EducationSection
 export const EducationSection = ({ data }) => (
   <section className="experience">
     <h1>Education</h1>
@@ -37,7 +37,7 @@ export const EducationSection = ({ data }) => (
   </section>
 );
 
-// CertificatesSection.js
+// CertificatesSection
 export const CertificatesSection = ({ data }) => (
   <section className="experience">
     <h1>Certificates</h1>
@@ -54,7 +54,7 @@ export const CertificatesSection = ({ data }) => (
 );
 
 
-// SkillsSection.js
+// SkillsSection
 export const SkillsSection = ({ data }) => (
   <section className="experience">
     <h1>Courses</h1>
