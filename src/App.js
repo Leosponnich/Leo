@@ -6,7 +6,6 @@ import Header from './components/Header/header';
 import './components/Header/header.css';
 import './pages/Home/home.css';
 import './elements/styles.css';
-import logo from '../public/favicon.ico';
 import Home from './pages/Home/home';
 import Work from './pages/Work/work';
 import SHFL from './pages/Shfl/shfl';
@@ -40,7 +39,6 @@ const App = () => {
       <Footer />
     </Router>
     <Helmet>
-
       {/*Global tags */}
       <title>Leosponnich</title>
       <meta name="description" content="Welcome to my portfolio website, where I showcase my skills in IT, web development, and UX/UI design. Explore my projects, discover my creative process, and get in touch to collaborate on exciting new ventures. Let's bring your digital ideas to life together!" />
@@ -50,7 +48,6 @@ const App = () => {
        {/* Open Graph Tags (for Facebook and other platforms) */}
        <meta property="og:title" content="leosponnich" />
         <meta property="og:description" content="Welcome to leosponnich, where creativity meets innovation. Explore my portfolio and discover my journey in IT, web development, and UX/UI design." />
-        <meta property="og:image" content={logo} />
         <meta property="og:url" content="https://www.leosponnich.com/" />
         <meta property="og:type" content="website" />
         
@@ -58,7 +55,6 @@ const App = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="leosponnich" />
         <meta name="twitter:description" content="Welcome to leosponnich, where creativity meets innovation. Explore my portfolio and discover my journey in IT, web development, and UX/UI design." />
-        <meta name="twitter:image" content={logo} />
         <meta name="twitter:url" content="https://www.leosponnich.com/" />
         <meta name="twitter:site" content="@leosponnich" />
     </Helmet>
